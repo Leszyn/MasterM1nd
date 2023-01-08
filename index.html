@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>Masterm1nd</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">	
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
+	
+	<link rel="stylesheet" href="styl.css">
+	
+	<!--[if lt IE 9]>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<![endif]-->
+	
+</head>
+<body>
+	<div class="chooseDifficulty">
+		<div class="header">
+			<h1>Witaj w grze Masterm1nd</h1>
+			<p>W tym panelu możesz wybrać poziom trudności na jakim podejmiesz się wyzwania, aby wygrac w grze Masterm1nd!</p>
+		</div>
+		<div class="main">
+			<div class="btns">
+				<button data-difficultyLvl="easy" class="easy">Easy</button>
+				<button data-difficultyLvl="medium" class="medium">Medium</button>
+				<button data-difficultyLvl="hard" class="hard">Hard</button>
+			</div>
+			<div class="description">
+				<p>
+					Opis Poziomów trudności
+				</p>
+				<p class="opis">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolore, eveniet nulla corporis, quam vitae, eum adipisci aperiam ratione officia eligendi architecto porro non. Modi odio veritatis odit neque dolore?
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<main class="hidden">
+		<article>
+			
+			<header><h1>Masterm1nd <span id="help">[?]</span></h1></header>
+		
+			<div class="help">
+				<span id="closeHelp">[ Zamknij ]</span>
+				<p>Gra Mastermind polega na odgadnięciu kolorów każdego z pięciu bloków.</p>
+				<p>Zalóżmy, iż poprawna kombinacja bloków, którą należy odgadnąć jest następująca:</p>
+				<img src="assets/help1.png" alt="Poprawna kombinacja">
+				<p>Natomiast układ wprowadzony przez nas wygląda następująco:</p>
+				<img src="assets/help2.png" alt="Przykładowa kombinacja">
+				<p>Ikonki stanowiące podpowiedź pomagają ustalić właściwą kolejność barw:</p>
+				<img src="assets/help3.png" alt="Przykładowa kombinacja">
+			</div>
+		
+			<div class="board">
+				<canvas id="game_canvas" width="900" height="700"></canvas>
+			</div>	
+			
+			<div class="comment">
+				Który z kolorów wstawić w miejsce oznaczone strzałką?
+			</div>
+			
+			<div class="controls">
+				<button id="c1" class="colorBlock" data-color="0"></button>
+				<button id="c2" class="colorBlock" data-color="1"></button>
+				<button id="c3" class="colorBlock" data-color="2"></button>
+				<button id="c4" class="colorBlock" data-color="3"></button>
+				<button id="c5" class="colorBlock" data-color="4"></button>
+				<button id="c6" class="colorBlock" data-color="5"></button>
+				<button id="c7" class="colorBlock" data-color="6"></button>
+				<button id="c8" class="colorBlock" data-color="7"></button>
+				<button id="delete">popraw</button>
+			</div>	
+			
+		</article>	
+	</main>
+	
+	<script src="app.js"></script>
+</body>
+</html>
